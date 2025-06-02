@@ -619,7 +619,8 @@ p {
 
 .cards:hover img {
     transition: 0.5s;
-    transform: scale(115%);
+    transform: git push origin main
+scale(115%);
 }
 
 .cards2:hover img {

@@ -11,6 +11,7 @@
     overflow: hidden;
     padding: 0px 15px;
     transition: 0.7s;
+    text-align: center;
 }
 
 .topgreen .top1, .top2 {

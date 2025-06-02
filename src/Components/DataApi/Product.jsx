@@ -1,11 +1,7 @@
-import React from 'react'
-import './AllBirds.css'
-import Product from '../../Components/DataApi/Product'
+import { useContext } from "react"
+import './Product.css'
 
-
-function AllBirds() {
-
-  const products = [
+const products = [
   {
     "id": 1,
     "image_path": "Mix (1).avif",
@@ -1156,125 +1152,25 @@ function AllBirds() {
   }
 ]
 
+function Product() {
+
   return (
     <>
-      <div className="header">
-        <img className='bgimg' src="25Q2_MemorialDay_Site_HomepageHero_Mobile_860x1078.avif" alt="" />
-
-
-        <div className="hChild">
-          <h1>Memorial Day Sale</h1>
-          <p>Kick off summer with the comfiest shoes at the coolest prices.</p>
-
-          <div className="btns">
-            <button>MEN'S SALE</button>
-            <button>WOMEN'S SALE</button>
-
-            {/* <<<<btns>>>> */}
-          </div>
-
-          {/* hChild */}
-        </div>
-
-        {/* <<<<header>>>> */}
-      </div>
-
-
-      <div className="bigger1">
-        <div className='big1'>
-          <div className="textSe">
-            <h2>Bestsellers</h2>
-            <p>Fan-Favorite Sneakers, Flats, and Slip-Ons</p>
-          </div>
-
-          <div className="bts">
-            <button>Shop Men</button>
-            <button>Shop Women</button>
-          </div>
-        </div>
-        <div className="big2">
-          <div className="textSe">
-            <h2>New Arrivals</h2>
-            <p>The Latest Style & Limeited-Edition Colors</p>
-          </div>
-
-          <div className="bts">
-            <button>Shop Men</button>
-            <button>Shop Women</button>
-          </div>
-        </div>
-        <div className="big3"
-        >
-          <div className="textSe">
-            <h2>Spring Essentials</h2>
-            <p>Breezy Shoes For Warmer Days Ahead</p>
-          </div>
-
-          <div className="bts">
-            <button>Shop Men</button>
-            <button>Shop Women</button>
-          </div>
-        </div>
-
-        {/* <<<<<<<<bigger1>>>> */}
-      </div>
-
-      <div className="attemp-1-0">
-        <h1>WE MAKE BETTER THINGS IN A BETTER WAY</h1>
-        <p>By looking to the world’s greatest innovator—Nature—we create shoes
-          that deliver <br /> unrivaled comfort that you feel good in and feel good about.</p>
-
-          <li><img src="Allbirds_logo_white.png" alt="" /> <span>BY NATURE</span></li>
-      </div>
-
-      <div className="attemp-2-0">
-        <div className="attemp-2-1">
-          <img src="25Q2_RusticOrange_Site_ShoppableFeature_Desktop_US_2000x2000.avif" alt="" />
-          <div className="attemp-2-1-1">
-            <h1>Rock And Stroll In Comfort</h1>
-            <p>Effortlessly comfy styles take color cues from the Southwest’s rustic rock formations.</p>
-            <div className="btnsp">
-              <button>SHOP MEN</button>
-              <button>SHOP WOMEN</button>
-            </div>
-          </div>
-        </div>
-        <div className="attemp-2-2">
-          {
-        products.slice(0, 4).map(item => (
+      {
+        products.map(item => (
           <div className="cards" key={item.id}>
             <img src={item.image_path} alt="" />
             <div className="types-or-price">
-              <p className="product_type">{item.product_type} <span className="price">{item.price}</span></p>
               <p className="product_detail">{item.product_detail}</p>
-            </div> 
-            <div className="btnss">
-              <button>SHOP MEN</button>
-              <button>SHOP WOMEN</button>
+              <p className="product_type">{item.product_type}</p>
+              <p className="price">{item.price}</p>
             </div>
           </div>
         ))
       }
-
-      { products.slice(4 , 20).map(item => (
-          <div className="cards2" key={item.id}>
-            <img src={item.image_path} alt="" />
-            <div className="types-or-price2">
-              <p className="product_type2">{item.product_type} <span className="price2">{item.price}</span></p>
-              <p className="product_detail2">{item.product_detail}</p>
-            </div> 
-            <div className="btnss2">
-              <button>SHOP MEN</button>
-              <button>SHOP WOMEN</button>
-            </div>
-          </div>
-        ))
-      }
-        </div>
-      </div>
 
     </>
   )
 }
 
-export default AllBirds
+export default Product

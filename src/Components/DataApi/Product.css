@@ -1,0 +1,31 @@
+
+/* .cards{
+  height: 340px;
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.types-or-price{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: none;
+  align-items: start;
+  padding-left: 20px;
+  width: 100%;
+}
+.cards img{
+  height: 200px;
+}
+.product_detail{
+  color: #000;
+}
+.product_type{
+  color: #000;
+}
+.price{
+  color: #000;
+} */

@@ -15,6 +15,7 @@ import Help from './Pages/Help/Help'
 import Cart from './Pages/Cart/Cart'
 // import SideNavbar from './Pages/Navbar/SideNavbar'
 import Mix from './Pages/Mix-Products/Mix'
+import Footer from './Components/Footer/Footer'
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
           <Route path='/cart' element={<Cart />} />
           <Route path='/mix' element={<Mix />}/>
         </Routes>
+        <Footer/>
       </Router>
     </>
   )

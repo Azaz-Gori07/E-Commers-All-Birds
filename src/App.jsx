@@ -16,6 +16,9 @@ import Cart from './Pages/Cart/Cart'
 // import SideNavbar from './Pages/Navbar/SideNavbar'
 import Mix from './Pages/Mix-Products/Mix'
 import Footer from './Components/Footer/Footer'
+import Terms from './Pages/TermsPage/Terms'
+import Privacy from './Pages/PrivacyPage/Privacy'
+import Accessibility from './Pages/AccessibilityPage/Accessibility'
 
 
 function App() {
@@ -45,6 +48,9 @@ function App() {
           <Route path='/help' element={<Help />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/mix' element={<Mix />}/>
+          <Route path='/Terms' element={<Terms/>}/>
+          <Route path='/Privacy' element={<Privacy/>}/>
+          <Route path='/Accessibility' element={<Accessibility/>}/>
         </Routes>
         <Footer/>
       </Router>

@@ -2,6 +2,9 @@ import React from 'react'
 import './AllBirds.css'
 import ResponsiveCards from '../../Components/SwiperCards/Swiper'
 import ResponsiveProducts from '../../Components/SwiperProducts/ProductSlider'
+import CardSlider from '../../Components/SlickesCards/Slickes'
+import EmailInpute from '../../Components/EmailInput/EmailInput'
+import ApproachCard from '../../Components/ApproachCard/ApprochSection'
 
 
 function AllBirds() {
@@ -1160,7 +1163,7 @@ function AllBirds() {
   return (
     <>
       <div className="header">
-        <img src="25Q2_MemorialDay_Site_HomepageHero_Desktop_2880x1245.avif" className='bgMain'/>
+        <img src="25Q2_MemorialDay_Site_HomepageHero_Desktop_2880x1245.avif" className='bgMain' />
         <img className='bgimg' src="25Q2_MemorialDay_Site_HomepageHero_Mobile_860x1078.avif" alt="" />
 
 
@@ -1179,9 +1182,9 @@ function AllBirds() {
         </div>
 
         {/* <<<<header>>>> */}
-      </div>  
+      </div>
 
-      <ResponsiveCards/>
+      <ResponsiveCards />
 
       <div className="attemp-1-0">
         <h1>WE MAKE BETTER THINGS IN A BETTER WAY</h1>
@@ -1219,9 +1222,12 @@ function AllBirds() {
               </div>
             ))
           }
-
-          <ResponsiveProducts/>
+            
         </div>
+
+        <div className="attemp-2-2-1">
+              <ResponsiveProducts/>
+            </div>
       </div>
 
       <div className="attemp-3">
@@ -1229,7 +1235,7 @@ function AllBirds() {
           <img src="attemp-3-1-1.gif" alt="" />
           <div className="text">
             <h1>Card On The Table</h1>
-          <p>Hosted by Stanley Tucci</p>
+            <p>Hosted by Stanley Tucci</p>
           </div>
 
           <div className="butn">
@@ -1256,9 +1262,12 @@ function AllBirds() {
         </div>
 
         <div className="attemp-4-2">
+          <CardSlider/>
         </div>
       </div>
-
+      
+      <EmailInpute/>
+      <ApproachCard/>
     </>
   )
 }

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -95,7 +96,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 Allbirds, Inc. All Rights Reserved. <a href="#">Terms</a>, <a href="#">Privacy & Accessibility</a></p>
+        <p>© 2025 Allbirds, Inc. All Rights Reserved. <Link to='/Terms'>Terms</Link>, <Link to='/Privacy'>Privacy</Link> & <Link to='/Accessibility'>Accessibility</Link></p>
         <a href="#">Do Not Sell My Personal Information</a>
       </div>
     </footer>

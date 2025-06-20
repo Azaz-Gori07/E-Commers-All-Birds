@@ -36,8 +36,8 @@ export default function ResponsiveCards() {
               <p>{card.subtitle}</p>
             </div>
             <div className="card-buttons">
-              <button className="shop-button">Shop Women</button>
-              <button className="shop-button">Shop Men</button>
+              <button className="shop-button">SHOP WOMEN</button>
+              <button className="shop-button">SHOP MEN</button>
             </div>
           </div>
         ))}

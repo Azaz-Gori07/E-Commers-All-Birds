@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import TopGreen from './Pages/TopGreen/TopGreen'
-import Navbar from './Components/Navbar/Navbar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Men from './Pages/Men/Men'
 import Women from './Pages/Women/Women'
@@ -13,28 +11,24 @@ import Stores from './Pages/Stores/Stores'
 import User from './Pages/User/User'
 import Help from './Pages/Help/Help'
 import Cart from './Pages/Cart/Cart'
-// import SideNavbar from './Pages/Navbar/SideNavbar'
 import Mix from './Pages/Mix-Products/Mix'
 import Footer from './Components/Footer/Footer'
 import Terms from './Pages/TermsPage/Terms'
 import Privacy from './Pages/PrivacyPage/Privacy'
 import Accessibility from './Pages/AccessibilityPage/Accessibility'
+import LinkDrops from '../src/LinkDrops'
+
+
 
 
 function App() {
 
-  const [openNav, setOpenNav] = useState(false)
-
-  const HandleNav = () => {
-    setOpenNav(prev => !prev)
-  };
+  
 
   return (
     <>
       <Router>
-        <TopGreen />
-        <Navbar naV={HandleNav} openClose={openNav} />
-        {/* <SideNavbar openClose={openNav} /> */}
+        <LinkDrops/>
         <Routes>
           <Route path='/men' element={<Men />} />
           <Route path='/women' element={<Women />} />

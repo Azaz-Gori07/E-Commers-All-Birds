@@ -27,12 +27,26 @@
 
 .header .hChild h1 {
     font-size: 3vw;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Geograph', sans-serif;
     font-weight: 700;
     letter-spacing: 0.02em;
     text-transform: uppercase;
     background-color: none;
     color: white;
+    animation: headerH1 1.5s ease-out forwards;
+}
+
+@keyframes headerH1{
+    from{
+        opacity: 0;
+        scale: 0.5;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+        scale: 1;
+    }
 }
 
 .header .hChild p {
@@ -42,6 +56,20 @@
     text-transform: uppercase;
     background-color: none;
     color: white;
+    animation: headerP 2s ease-out forwards;
+}
+
+@keyframes headerP{
+    from{
+        opacity: 0;
+        scale: 0.5;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+        scale: 1;
+    }
 }
 
 .header .hChild .btns {
@@ -54,10 +82,22 @@
     height: 3.5vw;
     background-color: white;
     border: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'geograph', sans-serif;
     font-size: 1vw;
     letter-spacing: 0.10em;
     font-weight: 600;
+    animation: headerBTN 1s linear;
+}
+
+@keyframes headerBTN{
+    from{
+        opacity: 0;
+        scale: 0;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 .header .hChild .btns button:hover {
@@ -66,7 +106,7 @@
     height: 3.5vw;
     background-color: #000;
     border: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'geograph', sans-serif;
     font-size: 1vw;
     letter-spacing: 0.10em;
     font-weight: 600;
@@ -77,6 +117,20 @@
     width: 100%;
     height: 100%;
     position: absolute;
+    animation: scale 1s ease-out forwards;
+}
+
+@keyframes scale{
+    from{
+        opacity: 0;
+        scale: 0.5;
+        transform: translateX(-50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+        scale: 1;
+    }
 }
 
 .bgimg {
@@ -139,7 +193,7 @@
         height: 8vw;
         background-color: white;
         border: none;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'geograph', sans-serif;
         font-size: 2.5vw;
         letter-spacing: 0.10em;
         font-weight: 600;
@@ -149,113 +203,11 @@
         height: 8vw;
         background-color: #000;
         border: none;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'geograph', sans-serif;
         font-size: 2.5vw;
         letter-spacing: 0.10em;
         font-weight: 600;
     }
-}
-
-.bigger1 {
-    display: flex;
-    gap: 0px;
-    width: 100%;
-    height: auto;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    justify-content: center;
-    gap: 15px;
-    padding: 40px 0px;
-}
-
-.bigger1::-webkit-scrollbar {
-  display: none;
-}
-
-.big1 , .big2 , .big3 {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    width: 30%;
-    height: 80vh;
-    min-height: 600px;
-    border: none;
-    border: none;
-    overflow: hidden;
-    justify-content: space-between;
-    padding: 70px 0px 50px 0px;
-    /* scroll-snap-align: end; */
-}
-
-.big1 img, .big2 img, .big3 img{
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    filter: brightness(90%);
-    height: 100%;
-    object-fit: cover;
-}
-
-.big1:hover img, .big2:hover img, .big3:hover img{
-    transition: 0.4s;
-    transform: scale(1.1);
-}
-
-.textSe {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    gap: 10px;
-    z-index: 3;
-}
-
-.textSe h2,
-p {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.bts {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    z-index: 3;
-}
-
-.bts button {
-    width: 170px;
-    height: 40px;
-    border: none;
-    font-family: 'Montserrat', sans-serif;
-    opacity: 0;
-    font-weight: 600;
-    filter: brightness(100%);
-}
-
-.bts button:hover {
-    width: 170px;
-    height: 40px;
-    border: none;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #000;
-    color: #fff;
-}
-
-.big1:hover .bts button {
-    transition: 0.5s;
-    opacity: 1;
-}
-
-.big2:hover .bts button {
-    transition: 0.5s;
-    opacity: 1;
-}
-
-.big3:hover .bts button {
-    transition: 0.5s;
-    opacity: 1;
 }
 
 .attemp-1-0 {
@@ -388,7 +340,7 @@ p {
     height: 42px;
     border: none;
     border: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'geograph', sans-serif;
     background-color: #fff;
     color: #000;
 }
@@ -483,7 +435,7 @@ p {
     height: 3vw;
     border: none;
     /* border: none; */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'geograph', sans-serif;
     background-color: #fff;
     color: #000;
     font-size: 1vw;
@@ -494,7 +446,7 @@ p {
     height: 3vw;
     border: none;
     /* border: none; */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'geograph', sans-serif;
     background-color: #fff;
     color: #000;
     font-size: 1vw;
@@ -506,7 +458,7 @@ p {
     height: 3vw;
     border: none;
     border: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'geograph', sans-serif;
     background-color: #000;
     color: #fff;
 }
@@ -517,7 +469,7 @@ p {
     height: 3vw;
     border: none;
     border: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'geograph', sans-serif;
     background-color: #000;
     color: #fff;
 }
@@ -652,7 +604,7 @@ p {
         height: 9vw;
         background-color: white;
         border: none;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'geograph', sans-serif;
         font-size: 3vw;
         letter-spacing: 0.10em;
         font-weight: 600;
@@ -662,7 +614,7 @@ p {
         height: 9.2vw;
         background-color: #000;
         border: none;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'geograph', sans-serif;
         font-size: 3vw;
         letter-spacing: 0.10em;
         font-weight: 600;
@@ -759,7 +711,7 @@ p {
         height: 5.4vw;
         border: none;
         border: none;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'geograph', sans-serif;
         background-color: #fff;
         color: #000;
         font-size: 2vw;
@@ -771,7 +723,7 @@ p {
         height: 5.4vw;
         border: none;
         border: none;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'geograph', sans-serif;
         background-color: #000;
         color: #fff;
     }
@@ -924,6 +876,7 @@ p {
     opacity: 0;
     background-color: #fff;
     color: #000;
+    font-family: 'geograph', sans-serif;
 }
 
 .attemp-3-1:hover button {

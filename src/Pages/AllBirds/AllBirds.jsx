@@ -5,6 +5,7 @@ import ResponsiveProducts from '../../Components/SwiperProducts/ProductSlider'
 import CardSlider from '../../Components/SlickesCards/Slickes'
 import EmailInpute from '../../Components/EmailInput/EmailInput'
 import ApproachCard from '../../Components/ApproachCard/ApprochSection'
+import LowerNav from '../../Components/Navbar/LowerNav'
 
 
 function AllBirds() {
@@ -1162,6 +1163,8 @@ function AllBirds() {
 
   return (
     <>
+    <LowerNav/>
+
       <div className="header">
         <img src="25Q2_MemorialDay_Site_HomepageHero_Desktop_2880x1245.avif" className='bgMain' />
         <img className='bgimg' src="25Q2_MemorialDay_Site_HomepageHero_Mobile_860x1078.avif" alt="" />
@@ -1239,7 +1242,7 @@ function AllBirds() {
           </div>
 
           <div className="butn">
-            <button>Watch</button>
+            <button>WATCH</button>
           </div>
         </div>
         <div className="attemp-3-2">
@@ -1250,8 +1253,8 @@ function AllBirds() {
           </div>
 
           <div className="butn">
-            <button>Shop Men</button>
-            <button>Shop Women</button>
+            <button>SHOP MEN</button>
+            <button>SHOP WOMEN</button>
           </div>
         </div>
       </div>

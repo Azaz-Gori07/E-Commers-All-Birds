@@ -36,13 +36,14 @@
     animation: headerH1 1.5s ease-out forwards;
 }
 
-@keyframes headerH1{
-    from{
+@keyframes headerH1 {
+    from {
         opacity: 0;
         scale: 0.5;
         transform: translateX(100%);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateX(0);
         scale: 1;
@@ -59,13 +60,14 @@
     animation: headerP 2s ease-out forwards;
 }
 
-@keyframes headerP{
-    from{
+@keyframes headerP {
+    from {
         opacity: 0;
         scale: 0.5;
         transform: translateX(100%);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateX(0);
         scale: 1;
@@ -89,12 +91,13 @@
     animation: headerBTN 1s linear;
 }
 
-@keyframes headerBTN{
-    from{
+@keyframes headerBTN {
+    from {
         opacity: 0;
         scale: 0;
     }
-    to{
+
+    to {
         opacity: 1;
         scale: 1;
     }
@@ -120,13 +123,14 @@
     animation: scale 1s ease-out forwards;
 }
 
-@keyframes scale{
-    from{
+@keyframes scale {
+    from {
         opacity: 0;
         scale: 0.5;
         transform: translateX(-50%);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateX(0);
         scale: 1;
@@ -198,6 +202,7 @@
         letter-spacing: 0.10em;
         font-weight: 600;
     }
+
     .header .hChild .btns button:hover {
         width: 50vw;
         height: 8vw;
@@ -599,7 +604,7 @@
         font-size: 2.3vw;
     }
 
-        .header .hChild .btns button {
+    .header .hChild .btns button {
         width: 50vw;
         height: 9vw;
         background-color: white;
@@ -609,6 +614,7 @@
         letter-spacing: 0.10em;
         font-weight: 600;
     }
+
     .header .hChild .btns button:hover {
         width: 50vw;
         height: 9.2vw;
@@ -622,7 +628,10 @@
 }
 
 @media (max-width:760px) {
-    .big3 , .big1 , .big1 {
+
+    .big3,
+    .big1,
+    .big1 {
         display: flex;
         flex: 0 0 auto;
         scroll-snap-align: center;
@@ -685,11 +694,11 @@
         overflow: hidden;
     }
 
-    .attemp-2-1-1 h1{
+    .attemp-2-1-1 h1 {
         font-size: 5.3vw;
     }
 
-    .attemp-2-1-1 p{
+    .attemp-2-1-1 p {
         font-size: 3vw;
     }
 
@@ -741,10 +750,10 @@
         overflow-x: auto;
         flex-wrap: nowrap;
         scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
+        /* -webkit-overflow-scrolling: touch; */
     }
 
-    .attemp-2-2-1{
+    .attemp-2-2-1 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -870,13 +879,14 @@
 
 .butn button {
     z-index: 2;
-    width: 170px;
-    height: 45px;
+    width: 24%;
+    height: 3vw;
     border: none;
     opacity: 0;
     background-color: #fff;
     color: #000;
     font-family: 'geograph', sans-serif;
+    font-size: 1.2vw;
 }
 
 .attemp-3-1:hover button {
@@ -962,7 +972,7 @@
 .attemp-4-1 p {
     color: black;
     font-weight: 700;
-    font-family: 'Montserrat' , verdana;
+    font-family: 'Montserrat', verdana;
     font-size: 16px;
 }
 
@@ -1014,10 +1024,11 @@
 
     .butn button {
         z-index: 2;
-        width: 30%;
-        height: 40px;
+        width: 26%;
+        height: 6vw;
         border: none;
         opacity: 0;
+        font-size: 2vw;
     }
 
     @media (max-width:550px) {
@@ -1034,6 +1045,15 @@
             color: #fff;
             font-family: 'Montserrat', sans-serif;
             font-size: 3.4vw;
+        }
+
+        .butn button {
+            z-index: 2;
+            width: 30vw;
+            height: 9vw;
+            border: none;
+            opacity: 0;
+            font-size: 3.5vw;
         }
     }
 }

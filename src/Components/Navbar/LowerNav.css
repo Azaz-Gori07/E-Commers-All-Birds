@@ -53,5 +53,11 @@
   transform: translateX(-50%) scaleX(1);
 }
 
+@media (max-width:550px) {
+    .LowerNav li{
+    font-size: 2.2vw;
+}
+}
+
 
 /* .LowerNav ul li:hover{} */

@@ -151,9 +151,12 @@
 
 @media (max-width:480px) {
     .slicker-card{
-        height: 48vw;
+        height: 58vw;
     }
     .price-s, .detail-s, .title-s{
         font-size: 2.5vw;
+    }
+    .props{
+        margin-top: 0px;
     }
 }

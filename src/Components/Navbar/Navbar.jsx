@@ -5,6 +5,7 @@ import { BsCart3 } from "react-icons/bs";
 import './Navbar.css'
 import { FaChevronRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import { motion , AnimatePresence} from 'framer-motion';
 
 function Navbar({ HandleDrop, HandleDrop2, HandleDrop3, }) {
 
@@ -15,10 +16,6 @@ function Navbar({ HandleDrop, HandleDrop2, HandleDrop3, }) {
   };
 
   const [drop, setDrop] = useState(null)
-
-  const handleDrop = () => {
-    setDrop(prev => (prev === "" ? "men" : ""));
-  };
 
 
   useEffect(() => {
@@ -36,10 +33,8 @@ function Navbar({ HandleDrop, HandleDrop2, HandleDrop3, }) {
         <i className="fa-solid fa-bars" onClick={HandleNav}></i>
         <div className="nav1">
           <ul>
-            <li className='menDrop' onClick={ () =>  setDrop(prev => (prev === null ? "men" : null)) }>MEN</li>
-            <li onMouseEnter={ () =>  setDrop (prev === null ? 'women' : null) }
-            onMouseLeave={ ()=> setDrop('')}
-              >WOMEN</li>
+            <li className='menDrop' onClick={ () =>  setDrop(prev => (prev === "men" ? null : "men")) }>MEN</li>
+            <li onClick={  () =>  setDrop(prev => (prev === "women" ? null : "women"))}>WOMEN</li>
             <Link to='/socks'><li>SOCKS</li></Link>
             <Link to='/new-arrivals'><li>NEW ARRIVALS </li></Link>
           </ul>
@@ -49,7 +44,7 @@ function Navbar({ HandleDrop, HandleDrop2, HandleDrop3, }) {
         </div>
         <div className="nav2">
           <ul>
-            <li onClick={ () =>  setDrop(prev => (prev === null ? "sustainability" : null)) }>SUSTAINABILITY</li>
+            <li onClick={ () =>  setDrop(prev => (prev === "sustainability" ? null : "sustainability")) }>SUSTAINABILITY</li>
             <Link to='/reburn'><li>REBURN</li></Link>
             <Link to='/stores'><li>STORES</li></Link>
             <Link to='/mix'><FiSearch className='icons' /></Link>
@@ -84,7 +79,7 @@ function Navbar({ HandleDrop, HandleDrop2, HandleDrop3, }) {
 
 
       {drop === 'men' && (
-          <div className='main-1'>
+          <div className={`main-1 ${drop === "men" ? "open" : ""}`}>
             <div className="links">
               <h1>SHOES</h1>
 
@@ -143,7 +138,7 @@ function Navbar({ HandleDrop, HandleDrop2, HandleDrop3, }) {
       )}
 
       {drop === 'women' && (
-          <div className='main-1'>
+          <div className={`main-1 ${drop === 'women' ? 'open' : ""}`}>
             <div className="links">
               <h1>SHOES</h1>
 
@@ -203,7 +198,9 @@ function Navbar({ HandleDrop, HandleDrop2, HandleDrop3, }) {
       )}
 
       {drop === 'sustainability' && (
-        <div className='main-1-SustainAbility'>
+        <div
+        className={`main-1-SustainAbility ${drop === "sustainAbility" ? "open" : ""}`}
+        >
       <div className="links">
         <h1>SHOES</h1>
 

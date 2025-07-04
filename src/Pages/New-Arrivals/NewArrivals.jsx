@@ -4,7 +4,6 @@ import './NewArrivals.css'
 function NewArrivals() {
   return (
     <div>
-      
     </div>
   )
 }

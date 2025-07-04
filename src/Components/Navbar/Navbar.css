@@ -134,12 +134,11 @@
 
 
 .main-1{
-    width: 100%;
-    height: auto;
-    background: whitesmoke;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 60px 0px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-100%);
+    transition: all 2s ease-in;
 }
 
 .links{
@@ -227,12 +226,16 @@
 
 .main-1-SustainAbility{
     width: 100%;
-    height: auto;
+    height: 60vh;
     background: whitesmoke;
     display: flex;
     justify-content: center;
     padding: 60px 0px;
     gap: 60px;
+    position: sticky;
+    top: 60px;
+    left: 0;
+    z-index: 100;
 }
 
 @media (max-width:1200px) {

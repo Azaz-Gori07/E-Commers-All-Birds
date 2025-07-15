@@ -10,7 +10,7 @@
     align-items: center;
     margin: auto;
     padding: 0px 50px;
-    background-color: #fff;
+    background-color: #ffffff;
     z-index: 9999;
     opacity: 0;
     transform: translateY(-200%);
@@ -18,7 +18,7 @@
 
 }
 
-@keyframes dropDown{
+@keyframes dropDown {
     to {
         transform: translateY(0%);
         opacity: 1;
@@ -31,9 +31,10 @@
     align-items: center;
     gap: 20px;
     width: auto;
-    font-size: 13px;
+    font-size: 11px;
     color: #000;
     font-weight: 700;
+    letter-spacing: 0.1rem;
 }
 
 .nav1 ul li {
@@ -51,9 +52,10 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 700;
     cursor: pointer;
+    letter-spacing: 0.1rem;
 }
 
 .nav2 ul li {
@@ -61,7 +63,7 @@
     font-family: 'Geograph', sans-serif;
 }
 
-.navbar li:hover{
+.navbar li:hover {
     border-bottom: 1px solid;
 }
 
@@ -108,7 +110,8 @@
         font-size: 25px;
         display: flex;
     }
-    .sidenav{
+
+    .sidenav {
         display: block;
     }
 
@@ -133,7 +136,7 @@
 
 
 
-.main-1{
+.main-1 {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -141,44 +144,45 @@
     transition: all 2s ease-in;
 }
 
-.links{
+.links {
     display: flex;
     flex-direction: column;
     gap: 25px;
     height: 100%;
 }
- 
-.links ul{
-        font-family:  'geograph' ,Arial, Helvetica, sans-serif;
-        font-size: 13px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: auto;
-        font-weight: 500;
-        letter-spacing: 0.1em;
+
+.links ul {
+    font-family: 'geograph', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: auto;
+    font-weight: 500;
+    letter-spacing: 0.1em;
 }
 
 .links li:hover {
     cursor: pointer;
     text-decoration: underline;
 }
-.links h1{
+
+.links h1 {
     font-family: 'Lexend Tera', Arial;
     font-weight: 500;
 }
 
-.links h1:hover{
-        text-decoration: underline;
-        cursor: pointer;
+.links h1:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
-.featureCom h1{
+.featureCom h1 {
     font-family: 'Lexend Tera', Arial;
     font-weight: 500;
 }
 
-.featureCom{
+.featureCom {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -186,14 +190,15 @@
     height: 15vw;
 }
 
-.mens-Arrivals{
+.mens-Arrivals {
     display: flex;
     flex-direction: column;
     gap: 15px;
     width: 100%;
     height: 100%;
 }
-.arrivals-1{
+
+.arrivals-1 {
     display: flex;
     gap: 15px;
     width: 60vh;
@@ -203,14 +208,14 @@
     align-items: center;
 }
 
-.mens-Arrivals img{
+.mens-Arrivals img {
     width: 100%;
     height: 100%;
     position: absolute;
     filter: brightness(90%);
 }
 
-.mens-Arrivals p{
+.mens-Arrivals p {
     z-index: 3;
     color: white;
     font-weight: 800;
@@ -219,12 +224,12 @@
     font-family: 'Geograph', sans-serif;
 }
 
-.mens-Arrivals p:hover{
+.mens-Arrivals p:hover {
     cursor: pointer;
     text-decoration: underline;
 }
 
-.main-1-SustainAbility{
+.main-1-SustainAbility {
     width: 100%;
     height: 60vh;
     background: whitesmoke;
@@ -239,7 +244,9 @@
 }
 
 @media (max-width:1200px) {
-    .main-1-SustainAbility , .main-1{
+
+    .main-1-SustainAbility,
+    .main-1 {
         display: none;
     }
 }
@@ -250,4 +257,3 @@
 /* .menDrop:hover .main-1{
     animation: shake 1s ease-in-out;
 } */
-

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lexend+Tera:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lexend+Giga:wght@100..900&family=Lexend+Tera:wght@100..900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/geograph');
+/* @import url('https://fonts.cdnfonts.com/css/geograph'); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,6 +14,15 @@
     text-decoration: none;
     list-style: none;
     scrollbar-width: none;
+}
+
+@font-face {
+  font-family: 'Geograph';
+  src: url('../public/fonts/TestGeograph-Medium-BF6621def263e37.otf') format('opentype');
+}
+
+body {
+  font-family: 'Geograph', sans-serif;
 }
 
 .open {
@@ -56,13 +65,6 @@
     overflow: hidden;
 }
 
-/* .dropdown {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transform: translateY(-10px);
-    transition: all 0.3s ease;
-} */
 
 .main-1.open {
     transition: 1s ease-in-out;
@@ -79,4 +81,5 @@
     left: 0;
     z-index: 100;
 }
+
 

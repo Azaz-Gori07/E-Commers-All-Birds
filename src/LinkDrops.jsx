@@ -1,41 +1,26 @@
-import React, { useState } from 'react'
-// import MensLink from './Link-Droper/Men/Men'
-import TopGreen from './Components/TopGreen/TopGreen'
-import Navbar from './Components/Navbar/Navbar'
-// import WomenLink from './Link-Droper/Women/Women'
-// import Sustainability from './Link-Droper/Sustainability/Sustainability'
+import TopGreen from './Components/TopGreen/TopGreen';
+import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer'; // Make sure this exists
+import { useLocation } from 'react-router-dom';
 
-
-function LinkDrops() {
-
-  const [drop, setDrop] = useState()
-
-  const HandleDrop = () => {
-    setDrop(prev => !prev)
-  };
-
-  const [drop2, setDrop2] = useState()
-
-  const HandleDrop2 = () => {
-    setDrop2(prev => !prev)
-  };
-
-  const [drop3, setDrop3] = useState()
-
-  const HandleDrop3 = () => {
-    setDrop3(prev => !prev)
-  }
-
+const LinkDrops = ({ children }) => {
+  const location = useLocation();
+  const hideLayout = location.pathname === '/user'; // login page etc.
 
   return (
     <>
-      <TopGreen />
-      <Navbar HandleDrop={HandleDrop} HandleDrop2={HandleDrop2} HandleDrop3={HandleDrop3} drop={drop}/>
-      {/* <MensLink drop={drop} /> */}
-      {/* <WomenLink drop={drop2}/>
-      <Sustainability drop={drop3}/> */}
-    </>
-  )
-}
+      {!hideLayout && <TopGreen />}
+      {!hideLayout && <Navbar />}
+      
+      <main>{children}</main>
 
-export default LinkDrops
+      {!hideLayout && <Footer />}
+    </>
+  );
+};
+
+export default LinkDrops;
+
+
+
+

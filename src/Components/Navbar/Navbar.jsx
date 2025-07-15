@@ -45,8 +45,9 @@ function Navbar({ HandleDrop, HandleDrop2, HandleDrop3, }) {
         <div className="nav2">
           <ul>
             <li onClick={ () =>  setDrop(prev => (prev === "sustainability" ? null : "sustainability")) }>SUSTAINABILITY</li>
-            <Link to='/reburn'><li>REBURN</li></Link>
-            <Link to='/stores'><li>STORES</li></Link>
+            <Link to='/reburn'><li>RERUN</li></Link>
+            {/* <Link to='/stores'><li>STORES</li></Link> */}
+            <a href="https://www.allbirds.com/pages/stores"><li>STORES</li></a>
             <Link to='/mix'><FiSearch className='icons' /></Link>
             <Link to='/user'><FiUser className='icons' /></Link>
             <Link to='/help'><MdHelpOutline className='icons' /></Link>

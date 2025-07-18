@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Mix.css'
 import { FiSearch } from "react-icons/fi";
 import Products from '../../APIs/mixProducts.json'
+import { Link } from 'react-router-dom';
+
 
 function Mix() {
+
   return (
     <>
       <div className='mix-body'>
@@ -23,17 +26,25 @@ function Mix() {
 
         <div className="mix-products">
           {Products.map((product) => (
-            <div className="mix-card" key={product.id}>
-              <div className="mix-card-image">
-                <img src={product.image} alt={product.color} />
-              </div>
+            <>
+              <Link
+                to={`/items/mix/${product.id}`}
+                key={product.id}
+                className='mix-card-link'
+              >
+                <div className="mix-card">
+                  <div className="mix-card-image">
+                    <img src={product.image} alt={product.color} />
+                  </div>
 
-              <div className="mix-card-details">
-                <h2 className='mix-card-title'>{product.title}</h2>
-                <p className='mix-card-color'>{product.color}</p>
-                <p className='mix-card-price'>${product.price} <del>${product.originalPrice}</del></p>
-              </div>
-            </div>
+                  <div className="mix-card-details">
+                    <h2 className='mix-card-title'>{product.title}</h2>
+                    <p className='mix-card-color'>{product.color}</p>
+                    <p className='mix-card-price'>${product.price} <del>${product.originalPrice}</del></p>
+                  </div>
+                </div>
+              </Link>
+            </>
           ))}
 
           {/* ////mix-products///// */}

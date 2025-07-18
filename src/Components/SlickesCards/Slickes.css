@@ -40,13 +40,18 @@
 .slider .slick-list {
     margin: 0 -10px;
 }
+.items-slick{
+    height: 400px;
+    width: 20vw;
+}
 
 .slicker-card {
     /* background: #f4f3f3; */
-    height: 400px;
+    height: 100%;
     /* border: 1px solid; */
-    width: 20vw;
+    width: 100%;
     overflow: hidden;
+    cursor: pointer;
 
 }
 
@@ -97,11 +102,9 @@
     font-weight: 400;
 }
 @media (max-width:1024px) {
-    .slicker-card {
+.items-slick{
     height: 380px;
     width: 250px;
-    overflow: hidden;
-
 }
 
 .slider{
@@ -126,9 +129,9 @@
 }
 
 @media (max-width:816px) {
-    .slicker-card{
-        height: 300px;
-    }
+    .items-slick{
+    height: 300px;
+}
     .props{
         margin-top: 5px;
     }
@@ -138,9 +141,9 @@
 
 }
 @media (max-width:768px) {
-    .slicker-card{
-        height: 40vw;
-    }
+    .items-slick{
+    height: 40vw;
+}
     .props{
         margin-top: 10px;
     }
@@ -150,7 +153,7 @@
 }
 
 @media (max-width:480px) {
-    .slicker-card{
+    .items-slick{
         height: 58vw;
     }
     .price-s, .detail-s, .title-s{

@@ -61,8 +61,18 @@
     /* border: 1px solid #ccc; */
 }
 
-.mix-card {
+.mix-card-link {
     width: 33%;
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+
+.mix-card {
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -171,7 +181,7 @@
         padding: 6px;
     }
 
-    .mix-card {
+    .mix-card-link {
         width: 50%;
         padding: 5px;
     }

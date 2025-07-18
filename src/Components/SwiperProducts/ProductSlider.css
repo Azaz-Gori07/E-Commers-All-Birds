@@ -34,7 +34,6 @@
 .card:hover img{
   transition: 0.5s ease-out;
   transform: scale(112%);
-
 }
 
 .card img {

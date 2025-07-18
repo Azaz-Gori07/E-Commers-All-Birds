@@ -5,6 +5,7 @@ import socks from '../../APIs/socks.json'
 import Quistions from '../../APIs/quistions.json'
 import { FiChevronDown } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom'
 
 function Socks() {
 
@@ -33,7 +34,11 @@ function Socks() {
         </div>
         <div className="socks">
           {socks && socks.slice(0, 7).map((sock) => (
-            <div className="sock" key={sock.id} >
+            <Link 
+            className='socks-link'
+            key={sock.id}
+            to={`/items/socks/${sock.id}`}>
+            <div className="sock" >
               <div className="sock-image">
                 <img src={sock.image} alt={sock.color} className="sock-image" />
               </div>
@@ -52,12 +57,13 @@ function Socks() {
                 </div>
               </div>
             </div>
+            </Link>
 
           ))}
         </div>
       </div>
 
-      {/* /////Ankel-Socks//// */}
+      {/* /////Awdsnkel-Socks//// */}
 
       <div className="show-socks">
         <div className="headings">
@@ -66,7 +72,12 @@ function Socks() {
         </div>
         <div className="socks">
           {socks && socks.slice(7, 12).map((sock) => (
-            <div className="sock" key={sock.id} >
+            <Link
+            className='socks-link'
+            key={sock.id}
+            to={`/items/socks/${sock.id}`}
+            >
+            <div className="sock" >
               <div className="sock-image">
                 <img src={sock.image} alt={sock.color} className="sock-image" />
               </div>
@@ -85,6 +96,7 @@ function Socks() {
                 </div>
               </div>
             </div>
+            </Link>
 
           ))}
         </div>
@@ -101,7 +113,12 @@ function Socks() {
         </div>
         <div className="socks">
           {socks && socks.slice(12, 23).map((sock) => (
-            <div className="sock" key={sock.id} >
+            <Link
+            className='socks-link'
+            key={sock.id}
+            to={`/items/socks/${sock.id}`}
+            >
+            <div className="sock" >
               <div className="sock-image">
                 <img src={sock.image} alt={sock.color} className="sock-image" />
               </div>
@@ -120,6 +137,7 @@ function Socks() {
                 </div>
               </div>
             </div>
+            </Link>
 
           ))}
         </div>
@@ -136,7 +154,12 @@ function Socks() {
         </div>
         <div className="socks-last">
           {socks && socks.slice(23, 30).map((sock) => (
-            <div className="sock" key={sock.id} >
+            <Link
+            className='socks-link'
+            key={sock.id}
+            to={`/items/socks/${sock.id}`}
+            >
+            <div className="sock">
               <div className="sock-image">
                 <img src={sock.image} alt={sock.color} className="sock-image" />
               </div>
@@ -155,6 +178,7 @@ function Socks() {
                 </div>
               </div>
             </div>
+            </Link>
 
           ))}
         </div>

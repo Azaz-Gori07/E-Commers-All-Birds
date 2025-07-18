@@ -17,7 +17,7 @@ import Terms from './Pages/TermsPage/Terms';
 import Privacy from './Pages/PrivacyPage/Privacy';
 import Accessibility from './Pages/AccessibilityPage/Accessibility';
 import LinkDrops from './LinkDrops';
-// import ProductPage from './Pages/ProductPage/ProductPage';
+import ProductPage from './Pages/ProductPage/ProductPage';
 
 import WithRouteLoader from './Components/WithRouteLoader/WithRouteLoader';
 
@@ -42,6 +42,7 @@ function App() {
             <Route path="/Terms" element={<Terms />} />
             <Route path="/Privacy" element={<Privacy />} />
             <Route path="/Accessibility" element={<Accessibility />} />
+            <Route path='/items/:type/:id' element={<ProductPage/>} />
           </Routes>
         </WithRouteLoader>
       </LinkDrops>

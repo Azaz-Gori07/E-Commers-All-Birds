@@ -4,7 +4,6 @@
     "title": "Men's Trino® Sprinter Crew Socks",
     "discount": "$16",
     "price": "$9",
-    "type": "Crew",
     "gender": "Men",
     "color": "Natural White",
     "image": "src/assest/Socks/socks (1).avif"
@@ -14,7 +13,6 @@
     "title": "Women's Trino® Hiders",
     "discount": "$14",
     "price": "$9",
-    "type": "No Show",
     "gender": "Women",
     "color": "Hazy Beige",
     "image": "src/assest/Socks/socks (2).avif"
@@ -24,7 +22,6 @@
     "title": "Men's Trino® Tubers",
     "discount": "$14",
     "price": "$9",
-    "type": "Crew",
     "gender": "Men",
     "color": "Storm Grey",
     "image": "src/assest/Socks/socks (3).avif"
@@ -34,7 +31,6 @@
     "title": "Women's Trino® Sprinter Ankle Socks",
     "price": "$16",
     "discount": "$9",
-    "type": "Ankle",
     "gender": "Women",
     "color": "Charcoal",
     "image": "src/assest/Socks/socks (4).avif"
@@ -44,7 +40,6 @@
     "title": "Men's Trino® Hiders",
     "discount": "$14",
     "price": "$9",
-    "type": "No Show",
     "gender": "Men",
     "color": "Blue Depths",
     "image": "src/assest/Socks/socks (5).avif"
@@ -54,7 +49,6 @@
     "title": "Trino® XO Quarter Socks",
     "discount": "$18",
     "price": "$9",
-    "type": "Quarter",
     "gender": "Unisex",
     "color": "True Black",
     "image": "src/assest/Socks/socks (6).avif"
@@ -64,7 +58,6 @@
     "title": "Trino® Sprinter Ankle Socks",
     "discount": "$16",
     "price": "$9",
-    "type": "Ankle",
     "gender": "Unisex",
     "color": "White + Green",
     "image": "src/assest/Socks/socks (7).avif"
@@ -73,7 +66,6 @@
     "id": 8,
     "title": "Trino® XO Crew Socks",
     "price": "$18",
-    "type": "Crew",
     "gender": "Unisex",
     "color": "Grey + Yellow",
     "image": "src/assest/Socks/socks (8).avif"
@@ -82,7 +74,6 @@
     "id": 9,
     "title": "Trino® Hiders",
     "price": "$14",
-    "type": "No Show",
     "gender": "Unisex",
     "color": "White",
     "image": "src/assest/Socks/socks (9).avif"
@@ -91,7 +82,6 @@
     "id": 10,
     "title": "Trino® XO Hiders",
     "price": "$14",
-    "type": "No Show",
     "gender": "Unisex",
     "color": "Blue Stripe",
     "image": "src/assest/Socks/socks (10).avif"
@@ -100,7 +90,6 @@
     "id": 11,
     "title": "Kids' Trino® Tubers",
     "price": "$10",
-    "type": "Crew",
     "gender": "Kids",
     "color": "Forest Green",
     "image": "src/assest/Socks/socks (11).avif"
@@ -109,7 +98,6 @@
     "id": 12,
     "title": "Kids' Trino® Hiders",
     "price": "$10",
-    "type": "No Show",
     "gender": "Kids",
     "color": "Sunset Red",
     "image": "src/assest/Socks/socks (12).avif"
@@ -118,7 +106,6 @@
     "id": 13,
     "title": "Men's Trino® XO Hiders",
     "price": "$14",
-    "type": "No Show",
     "gender": "Men",
     "color": "Charcoal",
     "image": "src/assest/Socks/socks (13).avif"
@@ -127,7 +114,6 @@
     "id": 14,
     "title": "Women's Trino® XO Ankle Socks",
     "price": "$16",
-    "type": "Ankle",
     "gender": "Women",
     "color": "Lavender",
     "image": "src/assest/Socks/socks (14).avif"
@@ -136,7 +122,6 @@
     "id": 15,
     "title": "Men's Trino® Sprinter Ankle Socks",
     "price": "$16",
-    "type": "Ankle",
     "gender": "Men",
     "color": "Natural White",
     "image": "src/assest/Socks/socks (15).avif"
@@ -145,7 +130,6 @@
     "id": 16,
     "title": "Trino® Sprinter Ankle Socks",
     "price": "$16",
-    "type": "Ankle",
     "gender": "Unisex",
     "color": "White + Green",
     "image": "src/assest/Socks/socks (16).avif"
@@ -154,7 +138,6 @@
     "id": 17,
     "title": "Trino® XO Crew Socks",
     "price": "$18",
-    "type": "Crew",
     "gender": "Unisex",
     "color": "Grey + Yellow",
     "image": "src/assest/Socks/socks (17).avif"
@@ -163,7 +146,6 @@
     "id": 18,
     "title": "Trino® Hiders",
     "price": "$14",
-    "type": "No Show",
     "gender": "Unisex",
     "color": "White",
     "image": "src/assest/Socks/socks (18).avif"
@@ -172,7 +154,6 @@
     "id": 19,
     "title": "Trino® XO Hiders",
     "price": "$14",
-    "type": "No Show",
     "gender": "Unisex",
     "color": "Blue Stripe",
     "image": "src/assest/Socks/socks (19).avif"
@@ -181,7 +162,6 @@
     "id": 20,
     "title": "Kids' Trino® Tubers",
     "price": "$10",
-    "type": "Crew",
     "gender": "Kids",
     "color": "Forest Green",
     "image": "src/assest/Socks/socks (20).avif"
@@ -190,7 +170,6 @@
     "id": 21,
     "title": "Kids' Trino® Hiders",
     "price": "$10",
-    "type": "No Show",
     "gender": "Kids",
     "color": "Sunset Red",
     "image": "src/assest/Socks/socks (21).avif"
@@ -199,7 +178,6 @@
     "id": 22,
     "title": "Men's Trino® XO Hiders",
     "price": "$14",
-    "type": "No Show",
     "gender": "Men",
     "color": "Charcoal",
     "image": "src/assest/Socks/socks (22).avif"
@@ -208,7 +186,6 @@
     "id": 23,
     "title": "Women's Trino® XO Ankle Socks",
     "price": "$16",
-    "type": "Ankle",
     "gender": "Women",
     "color": "Lavender",
     "image": "src/assest/Socks/socks (23).avif"
@@ -218,7 +195,6 @@
     "title": "Anytime No Show Sock",
     "color": "Blizzard",
     "price": "$35", 
-    "type": "No Show",
     "image": "src/assest/Socks/trio (1).avif"
   },
   {
@@ -226,7 +202,6 @@
     "title": "Anytime No Show Sock",
     "color": "Natural Black",
     "price": "$35",
-    "type": "No Show",
     "image": "src/assest/Socks/trio (2).avif"
   },
   {
@@ -234,7 +209,6 @@
     "title": "Anytime No Show Sock",
     "color": "Blizzard/Medium Grey/Natural Black",
     "price": "$35",
-    "type": "No Show",
     "image": "src/assest/Socks/trio (3).avif"
   },
   {
@@ -242,7 +216,6 @@
     "title": "Anytime Ankle Sock",
     "color": "Blizzard",
     "price": "$38",
-    "type": "Ankle",
     "image": "src/assest/Socks/trio (4).avif"
   },
   {
@@ -250,7 +223,6 @@
     "title": "Anytime Ankle Sock",
     "color": "Natural Black",
     "price": "$38",
-    "type": "Ankle",
     "image": "src/assest/Socks/trio (5).avif"
   },
   {
@@ -258,7 +230,6 @@
     "title": "Anytime Ankle Sock",
     "color": "Blizzard/Medium Grey/Natural Black",
     "price": "$38",
-    "type": "Ankle",
     "image": "src/assest/Socks/trio (6).avif"
   },
   {
@@ -266,7 +237,6 @@
     "title": "Anytime Crew Sock",
     "color": "Blizzard/Medium Grey/Natural Black",
     "price": "$45",
-    "type": "Crew",
     "image": "src/assest/Socks/trio (7).avif"
   }
 ]

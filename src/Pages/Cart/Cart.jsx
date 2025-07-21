@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Cart.css'
 
-function Cart() {
+function Cart({ openCart , setOpenCart}) {
   return (
-    <div>
-      
-    </div>
+    <>
+      {
+        openCart && (
+          <main className='main'>
+            <div className={openCart ? "cart-show" : "cart-hide"}>
+              <p onClick={() => setOpenCart(false)} className='font-black mt-7'>X</p>
+            </div>
+          </main>
+        )
+      }
+    </>
   )
 }
 

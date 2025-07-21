@@ -18,13 +18,17 @@ import Privacy from './Pages/PrivacyPage/Privacy';
 import Accessibility from './Pages/AccessibilityPage/Accessibility';
 import LinkDrops from './LinkDrops';
 import ProductPage from './Pages/ProductPage/ProductPage';
-
 import WithRouteLoader from './Components/WithRouteLoader/WithRouteLoader';
 
 function App() {
+
+  const [openCart, setOpenCart] = useState(false);
+
+
   return (
     <Router>
-      <LinkDrops>
+      <Cart openCart={openCart} setOpenCart={setOpenCart}/>
+      <LinkDrops setOpenCart={setOpenCart}>
         <WithRouteLoader>
           <Routes>
             <Route path="/men" element={<Men />} />
@@ -37,12 +41,11 @@ function App() {
             <Route path="/stores" element={<Stores />} />
             <Route path="/user" element={<User />} />
             <Route path="/help" element={<Help />} />
-            <Route path="/cart" element={<Cart />} />
             <Route path="/mix" element={<Mix />} />
             <Route path="/Terms" element={<Terms />} />
             <Route path="/Privacy" element={<Privacy />} />
             <Route path="/Accessibility" element={<Accessibility />} />
-            <Route path='/items/:type/:id' element={<ProductPage/>} />
+            <Route path='/items/:type/:id' element={<ProductPage />} />
           </Routes>
         </WithRouteLoader>
       </LinkDrops>

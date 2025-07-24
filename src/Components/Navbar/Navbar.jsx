@@ -5,6 +5,7 @@ import { BsCart3 } from "react-icons/bs";
 import './Navbar.css'
 import { FaChevronRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import { useCart } from '../CartContext/cartContext';
 
 function Navbar({ toggle }) {
 
@@ -24,6 +25,8 @@ function Navbar({ toggle }) {
       document.body.classList.remove('no-scroll');
     }
   }, [drop]);
+
+  const {cartContext} = useCart();
 
   return (
     <>
@@ -50,19 +53,22 @@ function Navbar({ toggle }) {
             <Link to='/mix'><FiSearch className='icons' /></Link>
             <Link to='/user'><FiUser className='icons' /></Link>
             <Link to='/help'><MdHelpOutline className='icons' /></Link>
-            <BsCart3 className='icons' onClick={() => toggle(prev => !prev) } />
+            <div className="total">
+              <p id='total'>{cartContext.reduce((total, item) => total + item.quantity, 0)}</p>
+              <BsCart3 className='icons' onClick={() => toggle(prev => !prev) } />
+            </div>
           </ul>
         </div>
         <div className="iconsN">
           <Link to='/mix'><FiSearch className='icons' /></Link>
-          <Link to='/cart'><BsCart3 className='icons' /></Link>
+          <BsCart3 className='icons' onClick={() => toggle(prev => !prev) }/>
         </div>
       </div>
 
 
       {openClose && (
 
-        <div className="sidenav">
+        <div className="sidenav" onClick={HandleNav}>
 
           <li>MEN  <FaChevronRight /></li>
           <Link to='/women'><li>WOMEN  <FaChevronRight /></li></Link>

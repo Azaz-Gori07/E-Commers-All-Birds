@@ -1,13 +1,14 @@
 import React from 'react'
 import './LowerNav.css'
+import { Link } from 'react-router-dom'
 
 function LowerNav () {
   return (
     <div className='LowerNav'>
       <ul>
-        <li>Men's Shoes</li>
-        <li>Women's Shoes</li>
-        <li>New Arrivals</li>
+        <Link to="/men"><li>Men's Shoes</li></Link>
+        <Link to="/women"><li>Women's Shoes</li></Link>
+        <Link><li>New Arrivals</li></Link>
       </ul>
     </div>
   )

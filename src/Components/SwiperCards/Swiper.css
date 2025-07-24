@@ -69,11 +69,17 @@
     font-family: 'geograph', sans-serif;
     font-size: 1vw;
     font-weight: 500;
+    opacity: 0;
 }
 
 .shop-button:hover {
     background-color: black;
     color: white;
+}
+
+.card-container:hover .shop-button{
+    transition: 1s;
+    opacity: 1;
 }
 
 /* Mobile view */

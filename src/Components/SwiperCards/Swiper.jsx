@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import './Swiper.css'; //
+import { Link } from 'react-router-dom';
 
 const cards = [
   {
@@ -36,8 +37,8 @@ export default function ResponsiveCards() {
               <p>{card.subtitle}</p>
             </div>
             <div className="card-buttons">
-              <button className="shop-button">SHOP WOMEN</button>
-              <button className="shop-button">SHOP MEN</button>
+              <Link to="/women"><button className="shop-button">SHOP WOMEN</button></Link>
+              <Link to="/men"><button className="shop-button">SHOP MEN</button></Link>
             </div>
           </div>
         ))}

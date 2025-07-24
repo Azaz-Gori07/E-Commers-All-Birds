@@ -1,14 +1,26 @@
 // ProductPage.jsx
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './ProductPage.css'
 import allProducts from '../../APIs/allProducts';
 import { useParams } from 'react-router-dom';
 import EmailAprroch from '../../Components/ApproachCard/ApprochSection'
+import { useCart } from '../../Components/CartContext/cartContext';
 
 export default function ProductPage() {
 
   const { type, id } = useParams();
   const product = allProducts.find(p => p.id == parseInt(id) && p.type == type);
+
+  const { addToCart } = useCart();
+
+  const [selectedSize, setSelectedSize] = useState("")
+
+  const HandleSize = () => {
+    if (!selectedSize) {
+      alert("Please Select Your Size and Continue..");
+    }
+  }
+
 
   return (
 
@@ -62,16 +74,26 @@ export default function ProductPage() {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Size:</label>
-              <select className="w-full p-2 rounded-md border border-gray-300">
-                <option>Choose size</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
+              <select className="w-full p-2 rounded-md border border-gray-300"
+                value={selectedSize}
+                onChange={(e) => setSelectedSize(e.target.value)}
+              >
+                <option value="">Choose size</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
               </select>
             </div>
 
-            <button className="mt-4 bg-black text-white py-2 px-6 rounded-xl hover:bg-gray-900 transition">
+            <button className="mt-4 bg-black text-white py-2 px-6 rounded-xl hover:bg-gray-900 transition"
+              onClick={() => {
+                if (!selectedSize) {
+                  alert("Please select a size before adding to cart.");
+                  return;
+                }
+                addToCart({ ...product, size: selectedSize, quantity: 1 });
+              }}>
               Add to Cart
             </button>
           </div>

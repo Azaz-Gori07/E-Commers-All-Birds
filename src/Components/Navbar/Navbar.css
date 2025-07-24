@@ -135,6 +135,24 @@
     }
 }
 
+.total{
+    position: relative;
+    /* border: 1px solid; */
+}
+
+#total{
+    color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 13px;
+    font-size: 12px;
+    text-align: center;
+    padding: 2px 2px;
+    left: 20px;
+    top: 0;
+}
+
 
 
 

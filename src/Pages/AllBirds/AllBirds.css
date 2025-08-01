@@ -193,7 +193,7 @@
     }
 
     .header .hChild .btns button {
-        width: 50vw;
+        width: 40vw;
         height: 8vw;
         background-color: white;
         border: none;
@@ -605,7 +605,7 @@
     }
 
     .header .hChild .btns button {
-        width: 50vw;
+        width: 40vw;
         height: 9vw;
         background-color: white;
         border: none;
@@ -616,7 +616,7 @@
     }
 
     .header .hChild .btns button:hover {
-        width: 50vw;
+        width: 40vw;
         height: 9.2vw;
         background-color: #000;
         border: none;
@@ -716,8 +716,8 @@
     }
 
     .btnsp button {
-        width: 50%;
-        height: 5.4vw;
+        width: 35vw;
+        height: 6vw;
         border: none;
         border: none;
         font-family: 'geograph', sans-serif;
@@ -728,8 +728,8 @@
 
     .btnsp button:hover {
         transition: 0.4s;
-        width: 50%;
-        height: 5.4vw;
+        width: 35vw;
+        height: 6vw;
         border: none;
         border: none;
         font-family: 'geograph', sans-serif;

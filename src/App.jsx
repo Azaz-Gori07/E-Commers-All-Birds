@@ -24,10 +24,9 @@ function App() {
 
   const [openCart, setOpenCart] = useState(false);
 
-
   return (
     <Router>
-      <Cart openCart={openCart} setOpenCart={setOpenCart}/>
+      <Cart openCart={openCart} setOpenCart={setOpenCart} />
       <LinkDrops setOpenCart={setOpenCart}>
         <WithRouteLoader>
           <Routes>
